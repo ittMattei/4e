@@ -15,22 +15,6 @@ public class MenuDemo
       mainMenu.addOption("Aiuto");
       mainMenu.addOption("Esci");
       mainMenu.display();
-      
-      Scanner in = new Scanner(System.in);
-      
-       System.out.print("Inserire il nominativo del proprietario: ");
-      			String prop = in.next();
-      			
-      			System.out.print("Inserire il saldo iniziale: ");
-      			double saldoIniz  = in.nextDouble();
-      			
-      			conti[ContoInBanca.getLastId()] = new ContoInBanca(saldoIniz,prop);
-      			
-   
-      
-      for(ContoInBanca element : conti)
-      {
-    	  System.out.println(element.toString());
-      }
+     
    }
 }
